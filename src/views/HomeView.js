@@ -9,7 +9,6 @@ import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
 
 import BrandLogo from "../assets/images/logo.svg";
 
-
 import "./index.css";
 
 class HomeView extends Component {
@@ -18,6 +17,7 @@ class HomeView extends Component {
       <div class="body" id="home">
         <div class="navigation">
           <Navbar
+            class="navbar"
             collapseOnSelect
             expand="lg"
             bg="light"
@@ -32,7 +32,7 @@ class HomeView extends Component {
                 className="d-inline-block align-top"
                 alt="React Bootstrap logo"
               />
-              Biuro BILANS
+              <span class="NaviBarndSpan">Biuro BILANS</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -50,7 +50,7 @@ class HomeView extends Component {
                   style={{
                     width: "100px",
                     textDecoration: "none",
-                    color: "black",
+                    color: "#3f2b55",
                   }}
                 >
                   O nas
@@ -60,7 +60,7 @@ class HomeView extends Component {
                   style={{
                     width: "100px",
                     textDecoration: "none",
-                    color: "black",
+                    color: "#3f2b55",
                   }}
                 >
                   Usługi
@@ -70,7 +70,7 @@ class HomeView extends Component {
                   style={{
                     width: "100px",
                     textDecoration: "none",
-                    color: "black",
+                    color: "#3f2b55",
                   }}
                 >
                   Kontakt
@@ -78,7 +78,7 @@ class HomeView extends Component {
               </Nav>
               <Nav>
                 <Nav.Link href="#deets">
-                  <FaFacebook />
+                  <FaFacebook class="NaviIcon" />
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -86,16 +86,19 @@ class HomeView extends Component {
         </div>
 
         <div class="jumbotron">
-          <h1 class="display-4">Hello, world!</h1>
-          <p class="lead">
-            This is a simple hero unit, a simple jumbotron-style component for
-            calling extra attention to featured content or information.
-          </p>
-          <hr class="my-4" />
-          <p>
-            It uses utility classes for typography and spacing to space content
-            out within the larger container.
-          </p>
+          <div class="jumboHeroTextWrapper">
+            <div class="jumboHeroTextWrapperTextHero">
+              <h1 class="jumboHeroTextWrapperTextHeroH1">Biuro Rachunkowe</h1>
+            </div>
+            <div class="jumboHeroTextWrapperTitle">
+              <p class="jumboHeroTextWrapperTitleLine">
+                Profesjonalne usługi księgowe
+              </p>
+            </div>
+            <div class="jumboHeroTextWrapperSubtitle">
+              <p class="jumboHeroTextWrapperSubtitleLine">Lidzbark Warmiński</p>
+            </div>
+          </div>
         </div>
         <div id="about">
           <div id="wrapperBreakeLine">
@@ -115,7 +118,7 @@ class HomeView extends Component {
           </div>
         </div>
         <div class="main">
-          <div class="shadow-sm p-3 mb-5 bg-white rounded about">
+          <div class="bg-white rounded about">
             <Container fluid>
               <Row>
                 <Col>
@@ -165,7 +168,7 @@ class HomeView extends Component {
               </div>
             </div>
           </div>
-          <div class="shadow-sm p-3 mb-5 bg-white rounded services">
+          <div class="bg-white rounded services">
             <Container>
               <Row>
                 <Col sm="12" md="6" lg="4" id="servicesCol">
@@ -174,8 +177,9 @@ class HomeView extends Component {
                       id="checkIcon"
                       style={{
                         fontSize: "50",
-                        border: "1px solid grey",
-                        padding: "1px 1px",
+                        border: "2px solid rgba(108, 68, 162, 0.5)",
+                        padding: "1px 2px",
+                        color: "#3f2b55",
                       }}
                     />
                     <span id="serviceColSpan">WSPÓŁPRACA</span>
@@ -192,8 +196,9 @@ class HomeView extends Component {
                       id="checkIcon"
                       style={{
                         fontSize: "50",
-                        border: "1px solid grey",
-                        padding: "1px 1px",
+                        border: "2px solid rgba(108, 68, 162, 0.5)",
+                        padding: "1px 2px",
+                        color: "#3f2b55",
                       }}
                     />
                     <span id="serviceColSpan">
@@ -213,8 +218,9 @@ class HomeView extends Component {
                       id="checkIcon"
                       style={{
                         fontSize: "50",
-                        border: "1px solid grey",
-                        padding: "1px 1px",
+                        border: "2px solid rgba(108, 68, 162, 0.5)",
+                        padding: "1px 2px",
+                        color: "#3f2b55",
                       }}
                     />
                     <span id="serviceColSpan">CENTRUM KSIĘGOWE ZYSK</span>
@@ -233,8 +239,9 @@ class HomeView extends Component {
                       id="checkIcon"
                       style={{
                         fontSize: "50",
-                        border: "1px solid grey",
-                        padding: "1px 1px",
+                        border: "2px solid rgba(108, 68, 162, 0.5)",
+                        padding: "1px 2px",
+                        color: "#3f2b55",
                       }}
                     />
                     <span id="serviceColSpan">RELAKS</span>
@@ -249,8 +256,9 @@ class HomeView extends Component {
                       id="checkIcon"
                       style={{
                         fontSize: "50",
-                        border: "1px solid grey",
-                        padding: "1px 1px",
+                        border: "2px solid rgba(108, 68, 162, 0.5)",
+                        padding: "1px 2px",
+                        color: "#3f2b55",
                       }}
                     />
                     <span id="serviceColSpan">CENTRUM KSIĘGOWE ZYSK</span>
@@ -267,8 +275,9 @@ class HomeView extends Component {
                       id="checkIcon"
                       style={{
                         fontSize: "50",
-                        border: "1px solid grey",
-                        padding: "1px 1px",
+                        border: "2px solid rgba(108, 68, 162, 0.5)",
+                        padding: "1px 2px",
+                        color: "#3f2b55",
                       }}
                     />
                     <span id="serviceColSpan">WSPÓŁPRACA</span>
@@ -334,6 +343,7 @@ class HomeView extends Component {
             <Row>
               <Col sm="12" md="6" lg="4">
                 <div class="footerCol">
+                  <p class="footerColHeader">Header</p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
@@ -344,6 +354,7 @@ class HomeView extends Component {
 
               <Col sm="12" md="6" lg="4">
                 <div class="footerCol">
+                  <p class="footerColHeader">Header</p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
@@ -353,6 +364,7 @@ class HomeView extends Component {
               </Col>
               <Col sm="12" md="6" lg="4">
                 <div class="footerCol">
+                  <p class="footerColHeader">Header</p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
@@ -364,7 +376,10 @@ class HomeView extends Component {
             <Container fluid="md">
               <Row>
                 <Col>
-                  <p id="copyright">&copy; 2020 Biuro BILANS</p>
+                  <p id="copyright">
+                    &copy; 2020
+                    <span class="footerCopyrightSpan">Biuro BILANS</span>
+                  </p>
                 </Col>
               </Row>
             </Container>
