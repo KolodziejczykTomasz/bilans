@@ -6,7 +6,7 @@ import {
   FaCheck,
 } from "react-icons/fa";
 import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
-
+import ScrollComponent from "../components/ScrollComponent";
 import BrandLogo from "../assets/images/logo.svg";
 
 import "./index.css";
@@ -385,6 +385,7 @@ class HomeView extends Component {
             </Container>
           </Container>
         </div>
+        <Nav.Link href="#home"><ScrollComponent /></Nav.Link>
       </div>
     );
   }

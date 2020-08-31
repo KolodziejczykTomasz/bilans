@@ -6,10 +6,6 @@
 
 /*NAVIGATION*/
 
-.navbar{
-  position: absolute;
-}
-
 .NaviBarndSpan {
   font-size: 18px;
   font-weight: 600;
@@ -19,13 +15,12 @@
 
 .NaviIcon {
   margin-left: -50px;
-  position: relative;
   color: #3f2b55;
   font-size: 35px;
   transition: 0.1s ease;
 }
 
-.NaviIcon:hover {  
+.NaviIcon:hover {
   color: rgba(108, 68, 162, 1);
 }
 
@@ -143,6 +138,8 @@
 #serviceColHeader {
   line-height: 30px;
   font-size: 20px;
+  font-size: 20px;
+  color: #3f2b55;
 }
 
 #checkIcon {
