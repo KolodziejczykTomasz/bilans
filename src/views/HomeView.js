@@ -1,4 +1,6 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+
 import {
   FaFacebook,
   FaEnvelope,
@@ -10,9 +12,13 @@ import ScrollComponent from "../components/ScrollComponent";
 import BrandLogo from "../assets/images/logo.svg";
 
 import "./index.css";
+import "aos/dist/aos.css"; 
 
-class HomeView extends Component {
-  render() {
+const HomeView =() =>{
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
     return (
       <div class="body" id="home">
         <div class="navigation">
@@ -100,7 +106,7 @@ class HomeView extends Component {
             </div>
           </div>
         </div>
-        <div id="about">
+        <div id="about" data-aos="fade-up">
           <div id="wrapperBreakeLine">
             <div id="wrapperItemLeft">
               <div id="breakeLine">
@@ -119,7 +125,7 @@ class HomeView extends Component {
         </div>
         <div class="main">
           <div class="bg-white rounded about">
-            <Container fluid>
+            <Container fluid data-aos="fade-up">
               <Row>
                 <Col>
                   <p id="aboutFirst">
@@ -169,7 +175,7 @@ class HomeView extends Component {
             </div>
           </div>
           <div class="bg-white rounded services">
-            <Container>
+            <Container data-aos="fade-up">
               <Row>
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
@@ -342,7 +348,7 @@ class HomeView extends Component {
           <Container>
             <Row>
               <Col sm="12" md="6" lg="4">
-                <div class="footerCol">
+                <div class="footerCol" data-aos="fade-up">
                   <p class="footerColHeader">Header</p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -353,7 +359,7 @@ class HomeView extends Component {
               </Col>
 
               <Col sm="12" md="6" lg="4">
-                <div class="footerCol">
+                <div class="footerCol" data-aos="fade-up">
                   <p class="footerColHeader">Header</p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -363,7 +369,7 @@ class HomeView extends Component {
                 </div>
               </Col>
               <Col sm="12" md="6" lg="4">
-                <div class="footerCol">
+                <div class="footerCol" data-aos="fade-up">
                   <p class="footerColHeader">Header</p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -385,10 +391,12 @@ class HomeView extends Component {
             </Container>
           </Container>
         </div>
-        <Nav.Link href="#home"><ScrollComponent /></Nav.Link>
+        <Nav.Link href="#home">
+          <ScrollComponent />
+        </Nav.Link>
       </div>
     );
-  }
-}
+  };
+
 
 export default HomeView;
