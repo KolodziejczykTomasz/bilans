@@ -51,33 +51,18 @@ const HomeView =() =>{
                   textTransform: "uppercase",
                 }}
               >
-                <Nav.Link
-                  href="#about"
-                  style={{
-                    width: "100px",
-                    textDecoration: "none",
-                    color: "#3f2b55",
-                  }}
+                <Nav.Link id="navLink" 
+                  href="#about"                  
                 >
                   O nas
                 </Nav.Link>
-                <Nav.Link
-                  href="#services"
-                  style={{
-                    width: "100px",
-                    textDecoration: "none",
-                    color: "#3f2b55",
-                  }}
+                <Nav.Link id="navLink"
+                  href="#services"                  
                 >
                   Usługi
                 </Nav.Link>
-                <Nav.Link
-                  href="#contact"
-                  style={{
-                    width: "100px",
-                    textDecoration: "none",
-                    color: "#3f2b55",
-                  }}
+                <Nav.Link id="navLink"
+                  href="#contact"                  
                 >
                   Kontakt
                 </Nav.Link>
@@ -157,7 +142,7 @@ const HomeView =() =>{
               </Row>
             </Container>
           </div>
-          <div id="services">
+          <div id="services" data-aos="fade-up">
             <div id="wrapperBreakeLine">
               <div id="wrapperItemLeft">
                 <div id="breakeLine">
@@ -180,13 +165,7 @@ const HomeView =() =>{
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
                     <FaCheck
-                      id="checkIcon"
-                      style={{
-                        fontSize: "50",
-                        border: "2px solid rgba(108, 68, 162, 0.5)",
-                        padding: "1px 2px",
-                        color: "#3f2b55",
-                      }}
+                      id="checkIcon"                      
                     />
                     <span id="serviceColSpan">WSPÓŁPRACA</span>
                   </p>
@@ -199,13 +178,7 @@ const HomeView =() =>{
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
                     <FaCheck
-                      id="checkIcon"
-                      style={{
-                        fontSize: "50",
-                        border: "2px solid rgba(108, 68, 162, 0.5)",
-                        padding: "1px 2px",
-                        color: "#3f2b55",
-                      }}
+                      id="checkIcon"                      
                     />
                     <span id="serviceColSpan">
                       Z NAMI BEZPIECZNIE I PROFESJONALNIE
@@ -221,13 +194,7 @@ const HomeView =() =>{
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
                     <FaCheck
-                      id="checkIcon"
-                      style={{
-                        fontSize: "50",
-                        border: "2px solid rgba(108, 68, 162, 0.5)",
-                        padding: "1px 2px",
-                        color: "#3f2b55",
-                      }}
+                      id="checkIcon"                   
                     />
                     <span id="serviceColSpan">CENTRUM KSIĘGOWE ZYSK</span>
                   </p>
@@ -242,13 +209,7 @@ const HomeView =() =>{
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
                     <FaCheck
-                      id="checkIcon"
-                      style={{
-                        fontSize: "50",
-                        border: "2px solid rgba(108, 68, 162, 0.5)",
-                        padding: "1px 2px",
-                        color: "#3f2b55",
-                      }}
+                      id="checkIcon"                     
                     />
                     <span id="serviceColSpan">RELAKS</span>
                   </p>
@@ -259,13 +220,7 @@ const HomeView =() =>{
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
                     <FaCheck
-                      id="checkIcon"
-                      style={{
-                        fontSize: "50",
-                        border: "2px solid rgba(108, 68, 162, 0.5)",
-                        padding: "1px 2px",
-                        color: "#3f2b55",
-                      }}
+                      id="checkIcon"                      
                     />
                     <span id="serviceColSpan">CENTRUM KSIĘGOWE ZYSK</span>
                   </p>
@@ -278,13 +233,7 @@ const HomeView =() =>{
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
                     <FaCheck
-                      id="checkIcon"
-                      style={{
-                        fontSize: "50",
-                        border: "2px solid rgba(108, 68, 162, 0.5)",
-                        padding: "1px 2px",
-                        color: "#3f2b55",
-                      }}
+                      id="checkIcon"                      
                     />
                     <span id="serviceColSpan">WSPÓŁPRACA</span>
                   </p>
