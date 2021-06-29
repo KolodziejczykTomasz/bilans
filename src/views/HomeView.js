@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
 import ScrollComponent from "../components/ScrollComponent";
-import BrandLogo from "../assets/images/logo.svg";
+import Brand from "../assets/images/brand.jpg";
 
 import "./index.css";
 import "aos/dist/aos.css"; 
@@ -26,19 +26,19 @@ const HomeView =() =>{
             class="navbar"
             collapseOnSelect
             expand="lg"
-            bg="light"
-            variant="light"
+            bg="white"
+            variant="white"
             fixed="top"
+            style={{ borderBottom: "4px solid #265D8C" }}
           >
             <Navbar.Brand href="#home">
               <img
-                src={BrandLogo}
-                width="30"
-                height="30"
+                src={Brand}
+                width="150"
+                height="auto"
                 className="d-inline-block align-top"
-                alt="React Bootstrap logo"
+                alt="Biuro Rachunkowe - logo"
               />
-              <span class="NaviBarndSpan">Biuro BILANS</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -51,24 +51,18 @@ const HomeView =() =>{
                   textTransform: "uppercase",
                 }}
               >
-                <Nav.Link id="navLink" 
-                  href="#about"                  
-                >
+                <Nav.Link id="navLink" href="#about">
                   O nas
                 </Nav.Link>
-                <Nav.Link id="navLink"
-                  href="#services"                  
-                >
+                <Nav.Link id="navLink" href="#services">
                   Usługi
                 </Nav.Link>
-                <Nav.Link id="navLink"
-                  href="#contact"                  
-                >
+                <Nav.Link id="navLink" href="#contact">
                   Kontakt
                 </Nav.Link>
               </Nav>
               <Nav>
-                <Nav.Link href="#deets">
+                <Nav.Link href="https://www.facebook.com/Biuro.Rachunkowe.Bilans.Robert.Gnat">
                   <FaFacebook class="NaviIcon" />
                 </Nav.Link>
               </Nav>
@@ -114,7 +108,7 @@ const HomeView =() =>{
               <Row>
                 <Col>
                   <p id="aboutFirst">
-                    Centrum Księgowe ZYSK, prowadzi swoją działalność na
+                    Biuro Rachunkowe Bilans, prowadzi swoją działalność na
                     podstawie wydanego przez Ministerstwo Finansów Świadectwa
                     Kwalifikacyjnego do usługowego prowadzenia ksiąg
                     rachunkowychr 25357/01.
@@ -164,12 +158,10 @@ const HomeView =() =>{
               <Row>
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
-                    <FaCheck
-                      id="checkIcon"                      
-                    />
+                    <FaCheck id="checkIcon" />
                     <span id="serviceColSpan">WSPÓŁPRACA</span>
                   </p>
-                  Centrum Księgowe ZYSK prowadzi ścisłą współpracę ze
+                  Biuro Rachunkowe Bilans prowadzi ścisłą współpracę ze
                   specjalistami bezpośrednio związanymi z prowadzeniem
                   działalności gospodarczej, którzy również mogą przez nasze
                   Centrum służyć pomocą w sprawach związanych z zakresu BHP,
@@ -177,9 +169,7 @@ const HomeView =() =>{
                 </Col>
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
-                    <FaCheck
-                      id="checkIcon"                      
-                    />
+                    <FaCheck id="checkIcon" />
                     <span id="serviceColSpan">
                       Z NAMI BEZPIECZNIE I PROFESJONALNIE
                     </span>
@@ -193,9 +183,7 @@ const HomeView =() =>{
                 </Col>
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
-                    <FaCheck
-                      id="checkIcon"                   
-                    />
+                    <FaCheck id="checkIcon" />
                     <span id="serviceColSpan">CENTRUM KSIĘGOWE ZYSK</span>
                   </p>
                   Siedziba główna biura rachunkowego mieści się w Czarnowąsach,
@@ -208,9 +196,7 @@ const HomeView =() =>{
               <Row id="servicesSecondLine">
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
-                    <FaCheck
-                      id="checkIcon"                     
-                    />
+                    <FaCheck id="checkIcon" />
                     <span id="serviceColSpan">RELAKS</span>
                   </p>
                   Proponujemy również chwilę relaksu dla tych, którzy chcą
@@ -219,9 +205,7 @@ const HomeView =() =>{
                 </Col>
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
-                    <FaCheck
-                      id="checkIcon"                      
-                    />
+                    <FaCheck id="checkIcon" />
                     <span id="serviceColSpan">CENTRUM KSIĘGOWE ZYSK</span>
                   </p>
                   Siedziba główna biura rachunkowego mieści się w Czarnowąsach,
@@ -232,9 +216,7 @@ const HomeView =() =>{
                 </Col>
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
-                    <FaCheck
-                      id="checkIcon"                      
-                    />
+                    <FaCheck id="checkIcon" />
                     <span id="serviceColSpan">WSPÓŁPRACA</span>
                   </p>
                   Centrum Księgowe ZYSK prowadzi ścisłą współpracę ze
@@ -270,15 +252,15 @@ const HomeView =() =>{
                   <div class="contactPhoto"></div>
                 </Col>
                 <Col md={4} id="contactRight">
-                  <p id="contactRightFistLine">SKONTAKTUJ SIĘ Z NAMI</p>
-                  <p id="contactRightSecondLine">Biuro rachunkowe BILANS</p>
+                  <h1 id="contactRightFistLine">SKONTAKTUJ SIĘ Z NAMI</h1>
+                  <h2 id="contactRightSecondLine">Biuro rachunkowe BILANS</h2>
                   <div>
                     <p>
                       <FaPhoneSquareAlt id="contactIcon" />
-                      +48 123 456 789
+                      +48 502 734 330
                     </p>
                     <p>
-                      <FaEnvelope id="contactIcon" /> Email@mail.pl
+                      <FaEnvelope id="contactIcon" /> robg@interia.pl
                     </p>
                   </div>
                 </Col>
@@ -332,8 +314,10 @@ const HomeView =() =>{
               <Row>
                 <Col>
                   <p id="copyright">
-                    &copy; 2020
-                    <span class="footerCopyrightSpan">Biuro BILANS</span>
+                    &copy; 2021
+                    <span class="footerCopyrightSpan">
+                      Biuro Rachunkowe Bilans
+                    </span>
                   </p>
                 </Col>
               </Row>

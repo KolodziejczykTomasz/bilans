@@ -6,10 +6,10 @@ class ScrollComponent extends Component {
     return (
       <ScrollButton
         behavior={"smooth"}
-        buttonBackgroundColor={"#3f2b55"}
+        buttonBackgroundColor={"#265D8C"}
         iconType={"arrow-up"}
         style={{ fontSize: "24px" }}
-        scrollSpeed={'2s'}
+        scrollSpeed={"2s"}
       />
     );
   }
