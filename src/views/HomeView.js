@@ -10,6 +10,9 @@ import {
 import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
 import ScrollComponent from "../components/ScrollComponent";
 import Brand from "../assets/images/brand.jpg";
+import Usluga1 from "../assets/images/uslugi/uslugi1.jpg"
+import Usluga2 from "../assets/images/uslugi/uslugi2.jpg";
+import Usluga3 from "../assets/images/uslugi/uslugi3.jpg";
 
 import "./index.css";
 import "aos/dist/aos.css"; 
@@ -81,7 +84,7 @@ const HomeView =() =>{
               </p>
             </div>
             <div class="jumboHeroTextWrapperSubtitle">
-              <p class="jumboHeroTextWrapperSubtitleLine">Lidzbark Warmiński</p>
+              <p class="jumboHeroTextWrapperSubtitleLine">Lidzbark Warmiński | Dobre Miasto</p>
             </div>
           </div>
         </div>
@@ -111,7 +114,7 @@ const HomeView =() =>{
                     Biuro Rachunkowe Bilans, prowadzi swoją działalność na
                     podstawie wydanego przez Ministerstwo Finansów Świadectwa
                     Kwalifikacyjnego do usługowego prowadzenia ksiąg
-                    rachunkowychr 25357/01.
+                    rachunkowych nr ....... .
                   </p>
                 </Col>
               </Row>
@@ -164,7 +167,7 @@ const HomeView =() =>{
                   Biuro Rachunkowe Bilans prowadzi ścisłą współpracę ze
                   specjalistami bezpośrednio związanymi z prowadzeniem
                   działalności gospodarczej, którzy również mogą przez nasze
-                  Centrum służyć pomocą w sprawach związanych z zakresu BHP,
+                  Biuro służyć pomocą w sprawach związanych z zakresu BHP,
                   obsługi prawnej oraz wszelkiego rodzaju ubezpieczeń.
                 </Col>
                 <Col sm="12" md="6" lg="4" id="servicesCol">
@@ -184,46 +187,45 @@ const HomeView =() =>{
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
                     <FaCheck id="checkIcon" />
-                    <span id="serviceColSpan">CENTRUM KSIĘGOWE ZYSK</span>
+                    <span id="serviceColSpan">Biuro Rachunkowe</span>
                   </p>
-                  Siedziba główna biura rachunkowego mieści się w Czarnowąsach,
-                  ale proponujemy naszym klientom również dojazd po odbiór
-                  dokumentów. W dogodnych dla każdego terminie pojawiamy się po
-                  dokumenty, a wszystkie rozliczenia otrzymujecie Państwo w
-                  formie elektronicznej.
+                  Siedziba główna biura rachunkowego mieści się w Lidzbarku
+                  Warmińskim przy ulicy Poniatowegiego 18, ale zapraszamy
+                  również do naszej filii w Dobry Mieście przy ulicy Jana Pawła
+                  II 25.
                 </Col>
               </Row>
               <Row id="servicesSecondLine">
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
                     <FaCheck id="checkIcon" />
-                    <span id="serviceColSpan">RELAKS</span>
+                    <span id="serviceColSpan">Facebook</span>
                   </p>
-                  Proponujemy również chwilę relaksu dla tych, którzy chcą
-                  pogłębić swoją wiedzę z zarządzania lub się nią podzielić –
-                  dla wszystkich zainteresowanych blog na stronie internetowej.
+                  Proponujemy również nowy kanał informacyjny dla tych, którzy
+                  chcą być na bieżąco lub chcą pogłębić swoją wiedzę lub się nią
+                  podzielić – dla wszystkich zainteresowanych zapraszamy na
+                  profil społecznościowy.
                 </Col>
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
                     <FaCheck id="checkIcon" />
-                    <span id="serviceColSpan">CENTRUM KSIĘGOWE ZYSK</span>
+                    <span id="serviceColSpan">Wnioski o dotację</span>
                   </p>
-                  Siedziba główna biura rachunkowego mieści się w Czarnowąsach,
-                  ale proponujemy naszym klientom również dojazd po odbiór
-                  dokumentów. W dogodnych dla każdego terminie pojawiamy się po
-                  dokumenty, a wszystkie rozliczenia otrzymujecie Państwo w
-                  formie elektronicznej.
+                  Planujesz zarejestrować swoją działalność gospodarczą,
+                  potrzebujesz profesjonalnej pomocy przy sporządzeniu wniosku
+                  do Urzędu Pracy w swojej miejscowości lub innej? Pomożemy
+                  napisać profesjonalny i kompleksowy wniosek na pozyskanie
+                  środków na rozpoczęcie działalności gospodarczej.
                 </Col>
                 <Col sm="12" md="6" lg="4" id="servicesCol">
                   <p id="serviceColHeader">
                     <FaCheck id="checkIcon" />
-                    <span id="serviceColSpan">WSPÓŁPRACA</span>
+                    <span id="serviceColSpan">Sprawozdania BDO</span>
                   </p>
-                  Centrum Księgowe ZYSK prowadzi ścisłą współpracę ze
-                  specjalistami bezpośrednio związanymi z prowadzeniem
-                  działalności gospodarczej, którzy również mogą przez nasze
-                  Centrum służyć pomocą w sprawach związanych z zakresu BHP,
-                  obsługi prawnej oraz wszelkiego rodzaju ubezpieczeń.
+                  Zapraszamy do skorzystania z usług sporządzania zbiorczego
+                  zestawienia danych o rodzajach i ilości odpadów, o sposobach
+                  gospodarowania nimi oraz o instalacjach i urządzeniach
+                  służących do odzysku i unieszkodliwiania odpadów.
                 </Col>
               </Row>
             </Container>
@@ -248,13 +250,25 @@ const HomeView =() =>{
           <div class="contact">
             <Container>
               <Row>
-                <Col md={8}>
+                <Col md={7}>
                   <div class="contactPhoto"></div>
                 </Col>
-                <Col md={4} id="contactRight">
+                <Col md={5} id="contactRight">
                   <h1 id="contactRightFistLine">SKONTAKTUJ SIĘ Z NAMI</h1>
-                  <h2 id="contactRightSecondLine">Biuro rachunkowe BILANS</h2>
+                  <p id="contactRightSecondLine">
+                    Siedziba główna biura rachunkowego
+                  </p>
+                  <ul id="contactList">
+                    <li>ul. Poniatowskiego 18</li>
+                    <li>11-100 Lidzbark WArmiński</li>
+                  </ul>
                   <div>
+                    <p id="contactRightSecondLine">Filia naszego biura</p>
+                    <ul id="contactList">
+                      <li>ul. Jana Pawła II 25</li>
+                      <li>11-040 Dobre Miasto</li>
+                    </ul>
+                    <div></div>
                     <p>
                       <FaPhoneSquareAlt id="contactIcon" />
                       +48 502 734 330
@@ -280,33 +294,36 @@ const HomeView =() =>{
             <Row>
               <Col sm="12" md="6" lg="4">
                 <div class="footerCol" data-aos="fade-up">
-                  <p class="footerColHeader">Header</p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  <p class="footerColHeader">Własna firma z nami</p>
+                  <div className="footerWidget"></div>
+                  <img
+                    className="footerWidgetImage"
+                    src={Usluga1}
+                    alt="Usługa - zakłądanie własnej firmy"
+                  />
                 </div>
               </Col>
 
               <Col sm="12" md="6" lg="4">
                 <div class="footerCol" data-aos="fade-up">
-                  <p class="footerColHeader">Header</p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  <p class="footerColHeader">Tarcza antykryzysowa 8.0</p>
+                  <div className="footerWidget"></div>
+                  <img
+                    className="footerWidgetImage"
+                    src={Usluga2}
+                    alt="Usługa - zakłądanie własnej firmy"
+                  />
                 </div>
               </Col>
               <Col sm="12" md="6" lg="4">
                 <div class="footerCol" data-aos="fade-up">
-                  <p class="footerColHeader">Header</p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  <p class="footerColHeader">Samozatrudnienie</p>
+                  <div className="footerWidget"></div>
+                  <img
+                    className="footerWidgetImage"
+                    src={Usluga3}
+                    alt="Usługa - zakłądanie własnej firmy"
+                  />
                 </div>
               </Col>
             </Row>
